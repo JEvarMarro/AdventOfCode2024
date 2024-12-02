@@ -1,5 +1,5 @@
 require_relative 'distance_calculator'
 
-result = DistanceCalculator.new.distance
+result = DistanceCalculator.new.result
 
 puts "Result: #{result}"

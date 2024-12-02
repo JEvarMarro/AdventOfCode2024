@@ -6,6 +6,10 @@ class FileReader
      populate_columns
    end
  
+   def columns
+    [@left_column, @right_column]
+   end
+
    def sorted_columns
      [@left_column.sort, @right_column.sort]
    end

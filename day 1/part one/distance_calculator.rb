@@ -1,19 +1,16 @@
-require_relative 'file_reader'
+require_relative '../score_calculator'
 
-class DistanceCalculator
-  attr_reader :distance
-
+class DistanceCalculator < ScoreCalculator
   def initialize
-    @distance = 0
     @left_column, @right_column = FileReader.new.sorted_columns
-    calculate_total_distance
+    super
   end
  
   private
  
-  def calculate_total_distance
+  def calculate
     for i in 0...collection_size
-      @distance += calculate_distance_between(i)
+      @result += calculate_distance_between(i)
     end
   end
   
