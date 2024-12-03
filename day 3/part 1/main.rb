@@ -1,4 +1,3 @@
-require_relative 'memory_reducer'
+require_relative './basic_instructions_parser'
 
-result = MemoryReducer.new.sum
-puts "Result: #{result}"
+puts "Total: #{BasicInstructionsParser.new.parse}"
