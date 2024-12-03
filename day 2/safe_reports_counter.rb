@@ -1,4 +1,4 @@
-require_relative '../file_reader'
+require_relative 'file_reader'
 require_relative 'report'
 
 class SafeReportsCounter
